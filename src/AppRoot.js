@@ -30,6 +30,14 @@ import ForgotPassword from "Screens/ForgotPassword/ForgotPassword";
 import ResetPassword from "Screens/ResetPassword/ResetPassword";
 import Dashboard from "Screens/Dashboard/Dashboard";
 import AppLaunch from "./Screens/AppLaunch/AppLaunch";
+import Register from "./Screens/Register/Register";
+import Booking from "./Screens/Booking/Booking";
+import DeliveryInfo from "./Screens/DeliveryInfo/DeliveryInfo";
+import PackagingType from "./Screens/PackagingType/PackagingType";
+import HouseRemoval from "./Screens/HouseRemoval/HouseRemoval";
+import FullContainerLoad from "./Screens/FullContainerLoad/FullContainerLoad";
+import ContainerTypes from "./Screens/ContainerTypes/ContainerTypes";
+import Revieworder from "./Screens/Revieworder/Revieworder";
 
 let transitionSpeed = 650;
 let tabIconSize = 18;
@@ -64,6 +72,7 @@ const LoginStack = createStackNavigator({
 
   appLaunch:AppLaunch,
 
+  register:Register,
   login: {
     screen: Login,
     navigationOptions: {
@@ -81,16 +90,27 @@ const LoginStack = createStackNavigator({
 
 },{
   initialRouteName:'appLaunch',
-  headerMode:'none'
+  headerMode:'none',
+  transitionConfig: nav => handleCustomTransition(nav)
+
 });
 
 
 const DashboardStack = createStackNavigator(
   {
-    dashboard:Dashboard
+    dashboard:Dashboard,
+    profile:Profile,
+    booking:Booking,
+    deliveryInfo:DeliveryInfo,
+    packagingType:PackagingType,
+    houseRemoval:HouseRemoval,
+    fullContainerLoad:FullContainerLoad,
+    containerTypes:ContainerTypes,
+    reviewOrder:Revieworder
   },
   {
     initialRouteName: "dashboard",
+  headerMode:'none',
     transitionConfig: nav => handleCustomTransition(nav)
   }
 );

@@ -3,12 +3,17 @@
 
 export const Colors  = {
   headerNavigational:['#27a4ff','#74c3fc'],
-  headerMain:['#FBFCFE','#AABDE5','#4472C4'],
+  headerMain:['#FBFCFE','#4472C4'],
   pageBackground:'#fff',
   primary: '#000',
   accent:'#E91E08',
   blue:'#0F0089',
   orange:'#F86602',
+  screenTitle:'#5B9BD5',
+  buttonSelectorLight:'#EAEFF7',
+  bottomBlueFooter:'#4472C4',
+  buttonSelectorDark:'#D3DEEF',
+
   yellow:'#FDFF00',
   inputs_placeholders:'#6A6A6A',
   inputBorder:'#86939e',

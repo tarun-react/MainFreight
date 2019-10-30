@@ -3,14 +3,12 @@ import { TouchableWithoutFeedback, View, Picker } from "react-native";
 import { Input } from "react-native-elements";
 import { Colors } from "UIProps/Colors";
 import InputValidations from "Helpers/InputValidations";
-import { labelStyleSignup } from "UIProps/Styles";
+import { labelStyleSignup,inputContainerStyle } from "UIProps/Styles";
 import "Helpers/global";
 import DateTimePicker from "react-native-modal-datetime-picker";
 import EStyleSheet from 'react-native-extended-stylesheet';
  
 import HelperMethods from "Helpers/Methods";
-import InputIcon from "./InputIcon";
-import { PowerTranslator } from "react-native-power-translator";
 import CustomText from "../CustomText";
 import AntDesign from 'react-native-vector-icons/AntDesign'
 export default class InputDatePicker extends Component {
@@ -63,15 +61,12 @@ wantToEdit:undefined,
     let placeHolderColor = value ? Colors.light : Colors.inputs_placeholders 
     return (
         <TouchableWithoutFeedback onPress={()=>this.openDatePicker()}>
-      <View style={styles.container}>
-      <View style={styles.labelEstyle}>
-        <PowerTranslator padding={0} style={labelStyleSignup} text={label} color={Colors.light} textAlign="left" />
-        </View>
-        <View style={{borderBottomWidth:1,borderColor:Colors.inputBorder,flexDirection: 'row',alignItems:'center',justifyContent:'space-between'}}>
-          <CustomText style={{marginVertical: 11,}} color={this.state.date ? Colors.light : placeHolderColor  }  text={this.state.date || placeHolderTxt} />
+      <View style={[styles.container,inputContainerStyle]}>
+        <View style={{marginTop: 15,flexDirection: 'row',alignItems:'center',justifyContent:'space-between'}}>
+          <CustomText style={{fontSize:15,paddingLeft:20}} color={this.state.date ? Colors.light : '#000'  }  text={this.state.date || 'Delivery Date'} />
           <AntDesign
           style={{ paddingRight: 10 }}
-          color={Colors.inputs_placeholders}
+          color={'#000'}
           name={'calendar'}
           size={ 20}
           />
@@ -99,8 +94,7 @@ const styles = EStyleSheet.create({
   },
 
   container:{
-
-    marginTop:'14.2rem'
+marginTop:20
   }
 })
 

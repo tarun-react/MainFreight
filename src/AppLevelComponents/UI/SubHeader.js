@@ -119,7 +119,7 @@ class SubHeader extends Component {
     this.props.navigation.navigate('Settings')
   }
   header_back_middle_right() {
-    let { title,rightText } = this.props;
+    let { title,rightText,noUnderline,rightPress } = this.props;
     return (
       <>
         <View style={{ flexDirection: "row", alignItems: "center" }}>
@@ -131,9 +131,9 @@ class SubHeader extends Component {
         <View>
           <CustomText text={title || "MAINFREIGHT SINGAPORE" } font={Fonts.heavy} size={13} color={Colors.blue} />
         </View>
-        <TouchableOpacity onPress={() => this.navigateSettings()}>
+        <TouchableOpacity onPress={() => rightPress && rightPress()}>
           <View>
-              <CustomText text={rightText} font={Fonts.heavy} style={{textDecorationLine:'underline'}} size={13} color={Colors.orange} />
+              <CustomText text={rightText} font={Fonts.heavy} style={{textDecorationLine:noUnderline ? undefined : 'underline'}} size={13} color={Colors.orange} />
           </View>
         </TouchableOpacity>
       </>

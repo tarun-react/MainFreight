@@ -1,18 +1,16 @@
 import React, { Component } from "react";
 import { Text, View } from "react-native";
 import { Input } from "react-native-elements";
-import { Colors } from "UIProps/Colors";
+import {Colors} from "UIProps/Colors";
 import InputValidations from "Helpers/InputValidations";
 import {
-  inputStyles,
   inputStylesContainer,
+  labelStyle,
   inputsError,
-  labelStyleSignup,
   inputContainerStyle
 } from "UIProps/Styles";
 import "Helpers/global";
 import HelperMethods from "Helpers/Methods";
-
 import InputIcon from "./InputIcon";
 
 export default class FirstName extends Component {
@@ -37,19 +35,16 @@ wantToEdit:undefined,
   }
 
   render() {
-    let {width,labelStyleAdditional,value} = this.props
-    let label = { ...labelStyleSignup, ...labelStyleAdditional };
+    let {width,value,textLabel,marginBottom,labelStyleAdditional} = this.props
+    let label = {...labelStyle,...labelStyleAdditional}
     return (
       <Input
-        label="First Name"
-        placeholder="First Name"
-        labelStyle={label}
-        containerStyle={inputStylesContainer}
+        label={textLabel || "Email Address"}
+        labelStyle={labelStyle}
+        inputContainerStyle={{...inputContainerStyle,marginBottom: marginBottom,}}
         onChangeText={text => this.setText(text)}
         value={this.state.wantToEdit ? this.state.text : value}
         placeholderTextColor={Colors.inputs_placeholders}
-        inputContainerStyle={inputContainerStyle}
-        inputStyle={inputStyles}
         errorStyle={inputsError}
         errorMessage={this.state.error}
       />

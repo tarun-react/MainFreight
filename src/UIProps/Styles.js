@@ -14,11 +14,10 @@ export const inputStyles = EStyleSheet.create({
 
 export let labelStyle = EStyleSheet.create({
   top:11,left:20,zIndex:1,
-  fontFamily:Fonts.regular,
+  fontFamily:Fonts.heavy,
   color:'#000',
   alignSelf:'flex-start',
   width:null,
-  backgroundColor:'rgba(255,255,255,0.8)',
   fontSize:14,
   fontWeight: "300",
 });
@@ -41,11 +40,11 @@ export const inputErrors = {
 };
 
 export const inputContainerStyle = {
-  borderRadius: 4,
-  borderWidth:1,
+  borderWidth:0,
+  borderBottomWidth: 0,
   borderColor: Colors.inputBorderColor,
-  backgroundColor:'#fff',
-  height:43,
+  backgroundColor:'#DEEBF7',
+  height:53,
 };
 
 export const cardStyle = {

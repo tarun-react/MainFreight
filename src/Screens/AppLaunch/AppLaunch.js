@@ -54,10 +54,12 @@ class AppLaunch extends Component {
       });
   };
 
-  navigateForgotPass = () => {
-    this.props.navigation.navigate("forgotPassword");
+  navigate = (screen) => {
+    this.props.navigation.navigate(screen);
   };
 
+
+  
   render() {
     return (
       <UserInfoConsumer>
@@ -71,7 +73,7 @@ class AppLaunch extends Component {
 
                   <CustomButton
                     containerStyle={{ marginTop: 20 }}
-                    onPress={this.login}
+                    onPress={this.navigate.bind(this,'register')}
                     text="Register now"
                   />
                   <CustomText
@@ -93,7 +95,7 @@ class AppLaunch extends Component {
                   />
 
                   <View style={{ alignItems: "center", marginTop: 20 }}>
-                    <CustomCheckbox text="Stay Login" />
+                    <CustomCheckbox checkedStatusGetter={checked => {}} text="Stay Login" />
                     <CustomText
                       text="Enjoy 10% off on your first booking !!!"
                       color={Colors.yellow}
@@ -109,10 +111,13 @@ class AppLaunch extends Component {
                 <CustomText
                   text="CONTINUE AS GUEST"
                   color={Colors.accent}
+                  onPress={this.navigate.bind(this,'dashboard')}
+                font={Fonts.heavy}
                   style={{ marginTop: 10, marginBottom: 0 }}
                 />
                 <CustomText
                   text="Register as driver with us"
+                    onPress={this.navigate.bind(this,'register')}
                   fontStyle="italic"
                   color={Colors.blue}
                   style={{ marginTop: 10, marginBottom: 20 }}

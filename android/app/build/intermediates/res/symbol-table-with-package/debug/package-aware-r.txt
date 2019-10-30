@@ -592,6 +592,7 @@ color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
 color catalyst_redbox_background
+color colorAccent
 color common_google_signin_btn_text_dark
 color common_google_signin_btn_text_dark_default
 color common_google_signin_btn_text_dark_disabled
@@ -997,6 +998,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable appicon_png
+drawable assets_img_logo
 drawable avd_hide_password
 drawable avd_show_password
 drawable background_splash
@@ -1040,6 +1042,8 @@ drawable node_modules_reactnativeratings_src_images_bell
 drawable node_modules_reactnativeratings_src_images_heart
 drawable node_modules_reactnativeratings_src_images_rocket
 drawable node_modules_reactnativeratings_src_images_star
+drawable node_modules_reactnativeuistepper_assets_decrement
+drawable node_modules_reactnativeuistepper_assets_increment
 drawable node_modules_reactnavigationstack_lib_module_views_assets_backicon
 drawable node_modules_reactnavigationstack_lib_module_views_assets_backiconmask
 drawable notification_action_background
@@ -1156,6 +1160,7 @@ id focusCrop
 id forever
 id fps_text
 id ghost_view
+id ghost_view_holder
 id group_divider
 id home
 id homeAsUp
@@ -1211,9 +1216,8 @@ id rn_redbox_reload_button
 id rn_redbox_report_button
 id rn_redbox_report_label
 id rn_redbox_stack
-id save_image_matrix
 id save_non_transition_alpha
-id save_scale_type
+id save_overlay_view
 id screen
 id scroll
 id scrollIndicatorDown
@@ -1737,6 +1741,7 @@ style ClockTimePickerStyle
 style DefaultExplainingPermissionsTheme
 style DialogAnimationFade
 style DialogAnimationSlide
+style MyDialogTheme
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents

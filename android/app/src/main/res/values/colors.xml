@@ -2,5 +2,6 @@
 <resources>
     <color name="primary_dark">#ffffff</color>
     <color name="status_bar_color">#f7f7f9</color>
-    <color name="splash_bg">#f7f7f9</color>
+    <color name="splash_bg">#fff</color>
+    <color name="colorAccent">#E91E08</color>
 </resources>

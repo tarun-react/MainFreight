@@ -44,7 +44,7 @@ export default class Container extends Component {
     let gradientPropsMain = {
       start: { x: 0.0, y: 0.25 },
       end: { x: 0.0, y: 1.0 },
-      locations: [0, 0.3, 0.7],
+      locations: [0, 0.9],
       colors: !hideGradient ? headerColorsMain  : ['#fff','#fff'] 
     };
     return (

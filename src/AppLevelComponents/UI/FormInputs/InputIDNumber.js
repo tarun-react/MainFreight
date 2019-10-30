@@ -4,16 +4,14 @@ import { Input } from "react-native-elements";
 import {Colors} from "UIProps/Colors";
 import InputValidations from "Helpers/InputValidations";
 import {
-  inputStyles,
   inputStylesContainer,
-  inputsError,
   labelStyle,
-  labelStyleSignup,
+  inputsError,
   inputContainerStyle
 } from "UIProps/Styles";
-import InputIcon from "./InputIcon";
 import "Helpers/global";
 import HelperMethods from "Helpers/Methods";
+import InputIcon from "./InputIcon";
 export default class InputIDNumber extends Component {
   state = {
     error: "",
@@ -46,21 +44,19 @@ wantToEdit:undefined,
   }
 
   render() {
-    let {label,value} = this.props
+    let {width,value,textLabel,marginBottom,labelStyleAdditional} = this.props
+    let label = {...labelStyle,...labelStyleAdditional}
     return (
       <Input
-      label={label || "ID Number"}
-      placeholder={label || "ID Number"}
-      labelStyle={labelStyleSignup}
-        containerStyle={inputStylesContainer}
-        
+        label={textLabel || "Email Address"}
+        labelStyle={labelStyle}
+        inputContainerStyle={{...inputContainerStyle,marginBottom: marginBottom,}}
         onChangeText={text => this.setText(text)}
         value={this.state.wantToEdit ? this.state.text : value}
-        keyboardType='numeric'
         placeholderTextColor={Colors.inputs_placeholders}
-        inputContainerStyle={inputContainerStyle}
-        inputStyle={inputStyles}
         errorStyle={inputsError}
+        keyboardType='numeric'
+        maxLength={14}
         errorMessage={this.state.error}
       />
     );

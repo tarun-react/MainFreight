@@ -1,4 +1,4 @@
-#Tue Oct 29 16:05:55 IST 2019
+#Wed Oct 30 14:54:21 IST 2019
 base.1=/Users/hermes/Projects/MainFreight/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.1=classes2.dex
 base.0=/Users/hermes/Projects/MainFreight/android/app/build/intermediates/transforms/dexMerger/debug/0

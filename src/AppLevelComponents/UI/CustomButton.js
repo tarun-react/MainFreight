@@ -86,6 +86,8 @@ const styles = EStyleSheet.create({
     
     height: "44rem",
     justifyContent: 'center',
+    borderWidth:1,
+    borderColor:'#000',
     backgroundColor: Colors.accent,
   }
 });

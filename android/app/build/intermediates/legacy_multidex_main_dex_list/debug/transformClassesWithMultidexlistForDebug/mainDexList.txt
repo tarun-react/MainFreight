@@ -25,6 +25,7 @@ androidx/annotation/CheckResult.class
 androidx/annotation/ColorInt.class
 androidx/annotation/ColorLong.class
 androidx/annotation/ColorRes.class
+androidx/annotation/ContentView.class
 androidx/annotation/DimenRes.class
 androidx/annotation/Dimension.class
 androidx/annotation/DrawableRes.class
@@ -34,6 +35,10 @@ androidx/annotation/FractionRes.class
 androidx/annotation/GuardedBy.class
 androidx/annotation/HalfFloat.class
 androidx/annotation/IdRes.class
+androidx/annotation/InspectableProperty$EnumEntry.class
+androidx/annotation/InspectableProperty$FlagEntry.class
+androidx/annotation/InspectableProperty$ValueType.class
+androidx/annotation/InspectableProperty.class
 androidx/annotation/IntDef.class
 androidx/annotation/IntRange.class
 androidx/annotation/IntegerRes.class
@@ -298,6 +303,7 @@ com/google/firebase/messaging/RemoteMessage$MessagePriority.class
 com/google/firebase/platforminfo/AutoValue_LibraryVersion.class
 com/google/firebase/platforminfo/LibraryVersion.class
 com/horcrux/svg/ImageView.class
+com/horcrux/svg/RNSVGRenderableManager.class
 com/horcrux/svg/RenderableView.class
 com/horcrux/svg/RenderableViewManager$CircleViewManager.class
 com/horcrux/svg/RenderableViewManager$DefsViewManager.class
@@ -322,6 +328,7 @@ com/horcrux/svg/VirtualView.class
 com/mainfreight/BuildConfig.class
 com/mainfreight/MainApplication$1.class
 com/mainfreight/MainApplication.class
+com/reactnativecommunity/netinfo/ConnectivityReceiver.class
 io/invertase/firebase/auth/RNFirebaseAuth$1.class
 io/invertase/firebase/auth/RNFirebaseAuth$11.class
 io/invertase/firebase/auth/RNFirebaseAuth$13.class

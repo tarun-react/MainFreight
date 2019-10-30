@@ -7,8 +7,7 @@ INJECTED from /Users/hermes/Projects/MainFreight/android/app/src/main/AndroidMan
 MERGED from /Users/hermes/Projects/MainFreight/android/app/src/main/AndroidManifest.xml:1:1-51:12
 MERGED from [:react-native-firebase] /Users/hermes/Projects/MainFreight/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/hermes/.gradle/caches/transforms-2/files-2.1/6d2a2070c0601e655ef12a60106ad82a/AndroidManifest.xml:17:1-22:12
-MERGED from [:react-native-fetch-blob] /Users/hermes/Projects/MainFreight/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
-MERGED from [:@react-native-community_netinfo] /Users/hermes/Projects/MainFreight/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:@react-native-community_netinfo] /Users/hermes/Projects/MainFreight/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-12:12
 MERGED from [:react-native-svg] /Users/hermes/Projects/MainFreight/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-nested-scroll-view] /Users/hermes/Projects/MainFreight/node_modules/react-native-nested-scroll-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-bottom-sheet-behavior] /Users/hermes/Projects/MainFreight/node_modules/react-native-bottom-sheet-behavior/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
@@ -60,8 +59,8 @@ MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/hermes/.gradle/cac
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/hermes/.gradle/caches/transforms-2/files-2.1/2a404f173258afe7236e7b169c7b004e/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/hermes/.gradle/caches/transforms-2/files-2.1/a1fbf2b4007b42b49da3a217e4ca726d/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/hermes/.gradle/caches/transforms-2/files-2.1/1556cfd6c111dc04d48817d728b9e1d2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.0.0] /Users/hermes/.gradle/caches/transforms-2/files-2.1/6ee3676ba37d31432c8ced3bf065e94d/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/hermes/.gradle/caches/transforms-2/files-2.1/945ab85d0792a2507c722f5cbc8f5482/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.1.0] /Users/hermes/.gradle/caches/transforms-2/files-2.1/0f4c8ee70e35e90add3ac1d74ecf6793/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.media:media:1.0.0] /Users/hermes/.gradle/caches/transforms-2/files-2.1/d8a7af6c4748cd1e9d01c43ae08453c1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/hermes/.gradle/caches/transforms-2/files-2.1/c13ed50231f2b3b3225c907ac0134968/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/hermes/.gradle/caches/transforms-2/files-2.1/c2ecd458ccea05307cae961f625ed9ba/AndroidManifest.xml:17:1-22:12
@@ -147,8 +146,6 @@ MERGED from /Users/hermes/Projects/MainFreight/android/app/src/main/AndroidManif
 MERGED from /Users/hermes/Projects/MainFreight/android/app/src/main/AndroidManifest.xml:10:5-49:19
 MERGED from [:react-native-firebase] /Users/hermes/Projects/MainFreight/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-21:19
 MERGED from [:react-native-firebase] /Users/hermes/Projects/MainFreight/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-21:19
-MERGED from [:react-native-fetch-blob] /Users/hermes/Projects/MainFreight/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
-MERGED from [:react-native-fetch-blob] /Users/hermes/Projects/MainFreight/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
 MERGED from [:react-native-image-picker] /Users/hermes/Projects/MainFreight/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-19:19
 MERGED from [:react-native-image-picker] /Users/hermes/Projects/MainFreight/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-19:19
 MERGED from [:react-native-splash-screen] /Users/hermes/Projects/MainFreight/node_modules/react-native-splash-screen/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-12:19
@@ -293,8 +290,6 @@ MERGED from [:react-native-firebase] /Users/hermes/Projects/MainFreight/node_mod
 MERGED from [:react-native-firebase] /Users/hermes/Projects/MainFreight/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/hermes/.gradle/caches/transforms-2/files-2.1/6d2a2070c0601e655ef12a60106ad82a/AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] /Users/hermes/.gradle/caches/transforms-2/files-2.1/6d2a2070c0601e655ef12a60106ad82a/AndroidManifest.xml:20:5-43
-MERGED from [:react-native-fetch-blob] /Users/hermes/Projects/MainFreight/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-fetch-blob] /Users/hermes/Projects/MainFreight/node_modules/react-native-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:@react-native-community_netinfo] /Users/hermes/Projects/MainFreight/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:@react-native-community_netinfo] /Users/hermes/Projects/MainFreight/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-svg] /Users/hermes/Projects/MainFreight/node_modules/react-native-svg/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
@@ -399,10 +394,10 @@ MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/hermes/.gradle
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/hermes/.gradle/caches/transforms-2/files-2.1/a1fbf2b4007b42b49da3a217e4ca726d/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/hermes/.gradle/caches/transforms-2/files-2.1/1556cfd6c111dc04d48817d728b9e1d2/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/hermes/.gradle/caches/transforms-2/files-2.1/1556cfd6c111dc04d48817d728b9e1d2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.0.0] /Users/hermes/.gradle/caches/transforms-2/files-2.1/6ee3676ba37d31432c8ced3bf065e94d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.0.0] /Users/hermes/.gradle/caches/transforms-2/files-2.1/6ee3676ba37d31432c8ced3bf065e94d/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/hermes/.gradle/caches/transforms-2/files-2.1/945ab85d0792a2507c722f5cbc8f5482/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/hermes/.gradle/caches/transforms-2/files-2.1/945ab85d0792a2507c722f5cbc8f5482/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.1.0] /Users/hermes/.gradle/caches/transforms-2/files-2.1/0f4c8ee70e35e90add3ac1d74ecf6793/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.1.0] /Users/hermes/.gradle/caches/transforms-2/files-2.1/0f4c8ee70e35e90add3ac1d74ecf6793/AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] /Users/hermes/.gradle/caches/transforms-2/files-2.1/d8a7af6c4748cd1e9d01c43ae08453c1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.0] /Users/hermes/.gradle/caches/transforms-2/files-2.1/d8a7af6c4748cd1e9d01c43ae08453c1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/hermes/.gradle/caches/transforms-2/files-2.1/c13ed50231f2b3b3225c907ac0134968/AndroidManifest.xml:20:5-44
@@ -507,6 +502,10 @@ ADDED from [:react-native-firebase] /Users/hermes/Projects/MainFreight/node_modu
 		ADDED from [:react-native-firebase] /Users/hermes/Projects/MainFreight/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-82
 	android:name
 		ADDED from [:react-native-firebase] /Users/hermes/Projects/MainFreight/node_modules/react-native-firebase/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-116
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [:@react-native-community_netinfo] /Users/hermes/Projects/MainFreight/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-76
+	android:name
+		ADDED from [:@react-native-community_netinfo] /Users/hermes/Projects/MainFreight/node_modules/@react-native-community/netinfo/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:22-73
 provider#com.imagepicker.FileProvider
 ADDED from [:react-native-image-picker] /Users/hermes/Projects/MainFreight/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-18:20
 	android:grantUriPermissions
