@@ -119,7 +119,7 @@ class SubHeader extends Component {
     this.props.navigation.navigate('Settings')
   }
   header_back_middle_right() {
-    let { title,rightText,noUnderline,rightPress } = this.props;
+    let { title,rightText,noUnderline,rightPress,rightColor,rightItalic } = this.props;
     return (
       <>
         <View style={{ flexDirection: "row", alignItems: "center" }}>
@@ -133,7 +133,7 @@ class SubHeader extends Component {
         </View>
         <TouchableOpacity onPress={() => rightPress && rightPress()}>
           <View>
-              <CustomText text={rightText} font={Fonts.heavy} style={{textDecorationLine:noUnderline ? undefined : 'underline'}} size={13} color={Colors.orange} />
+              <CustomText text={rightText} font={Fonts.heavy} style={{textDecorationLine:noUnderline ? undefined : 'underline',fontStyle:rightItalic ? 'italic' : undefined }} size={13} color={rightColor || Colors.orange} />
           </View>
         </TouchableOpacity>
       </>

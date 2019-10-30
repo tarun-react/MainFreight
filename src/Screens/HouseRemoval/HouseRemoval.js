@@ -19,6 +19,7 @@ import ListRenderer from "MainFreightUI/ListRenderer";
 import ButtonSelector from "MainFreightUI/ButtonSelector";
 import HouseRemovalItem from "./components/HouseRemovalItem";
 import NumberStepper from "../../AppLevelComponents/UI/NumberStepper";
+import SubmitBackBtn from "../../MainFreightUI/SubmitBackBtn";
 
 let data = [
   { time: "60 minutes", price: "$233.0" },
@@ -37,20 +38,18 @@ class HouseRemoval extends Component {
     return <HouseRemovalItem index={index} item={item} />;
   };
 
+  submit = () => {
+    this.props.navigation.navigate('fullContainerLoad')
+  }
   render() {
     return (
-      <UserInfoConsumer>
-        {context => {
-          currentContext = context;
-          return (
             <Container>
               <View style={{ padding: 15 }}>
                 <SubHeader
-                  type={Constants.header_back_middle_right}
                   rightText="Hi, cathy"
                   noUnderline={true}
                 />
-                <ScreenTitle title="Packaging Type" />
+                <ScreenTitle textCenter title="Packaging Type" />
                 <ButtonSelector
                   text={"Fees includes 1 mover excludes parking fees"}
                   hideIcon
@@ -81,7 +80,8 @@ class HouseRemoval extends Component {
                     text={"Enjoy 5% off on optional labour"}
                     font={Fonts.heavy}
                     size={17}
-                    style={{ marginTop: 20 }}
+                    fontStyle='italic'
+                    style={{ marginTop: 20,fontWeight:'600' }}
                     color="#000"
                   />
                   <CustomText
@@ -89,28 +89,14 @@ class HouseRemoval extends Component {
                     fontStyle={"italic"}
                     font={Fonts.heavy}
                     size={15}
-                    style={{ marginTop: 5 }}
+                    style={{ marginTop: 0 }}
                     color="#000"
                   />
                 </View>
 
-                <CustomButton
-                  containerStyle={{ marginTop: 10 }}
-                  onPress={this.login}
-                  text="submit"
-                />
-
-                <CustomButton
-                  containerStyle={{ marginTop: 10 }}
-                  btnType="white"
-                  onPress={this.login}
-                  text="back"
-                />
+               <SubmitBackBtn onSubmit={this.submit}  />
               </View>
             </Container>
-          );
-        }}
-      </UserInfoConsumer>
     );
   }
 }

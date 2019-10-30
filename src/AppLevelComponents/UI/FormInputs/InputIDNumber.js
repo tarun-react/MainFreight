@@ -12,6 +12,7 @@ import {
 import "Helpers/global";
 import HelperMethods from "Helpers/Methods";
 import InputIcon from "./InputIcon";
+import Icons from "../Icons";
 export default class InputIDNumber extends Component {
   state = {
     error: "",
@@ -44,13 +45,14 @@ wantToEdit:undefined,
   }
 
   render() {
-    let {width,value,textLabel,marginBottom,labelStyleAdditional} = this.props
+    let {width,value,textLabel,bgColor,labelStyleAdditional} = this.props
     let label = {...labelStyle,...labelStyleAdditional}
     return (
       <Input
         label={textLabel || "Email Address"}
         labelStyle={labelStyle}
-        inputContainerStyle={{...inputContainerStyle,marginBottom: marginBottom,}}
+        rightIcon={<Icons lib='Ionicons' name='md-pin' color={Colors.accent} size={29} style={{paddingRight:12}}  />}
+        inputContainerStyle={{...inputContainerStyle,backgroundColor:bgColor,}}
         onChangeText={text => this.setText(text)}
         value={this.state.wantToEdit ? this.state.text : value}
         placeholderTextColor={Colors.inputs_placeholders}

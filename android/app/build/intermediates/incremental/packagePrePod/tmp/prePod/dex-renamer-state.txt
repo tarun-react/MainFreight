@@ -1,4 +1,4 @@
-#Wed Oct 30 14:20:47 IST 2019
+#Wed Oct 30 18:23:21 IST 2019
 base.0=/Users/hermes/Projects/MainFreight/android/app/build/intermediates/transforms/dexMerger/prePod/0
 renamed.0=classes.dex
 path.0=classes.dex

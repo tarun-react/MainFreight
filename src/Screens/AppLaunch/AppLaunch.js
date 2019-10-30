@@ -19,6 +19,7 @@ import AsyncStorageHandler from "../../StorageHelpers/AsyncStorageHandler";
 import Constants from "../../Helpers/Constants";
 import SubHeader from "../../AppLevelComponents/UI/SubHeader";
 import CustomCheckbox from "../../AppLevelComponents/UI/CustomCheckbox";
+import BottomImage from "../../MainFreightUI/BottomImage";
 
 let valObj = {
   email: "samyak@yopmail.com",
@@ -105,10 +106,9 @@ class AppLaunch extends Component {
                   </View>
                 </View>
               </Container>
-              <View
-                style={{ backgroundColor: "#4472C4", alignItems: "center" }}
-              >
-                <CustomText
+
+              <BottomImage>
+              <CustomText
                   text="CONTINUE AS GUEST"
                   color={Colors.accent}
                   onPress={this.navigate.bind(this,'dashboard')}
@@ -122,7 +122,8 @@ class AppLaunch extends Component {
                   color={Colors.blue}
                   style={{ marginTop: 10, marginBottom: 20 }}
                 />
-              </View>
+              </BottomImage>
+             
             </ScreenMemory>
           );
         }}

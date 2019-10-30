@@ -9,7 +9,9 @@ EStyleSheet.build({
 export const inputStyles = EStyleSheet.create({
   fontSize:17*global.rem,
   color: Colors.black,
-  backgroundColor:'#fff'
+  backgroundColor:'#fff',
+  marginBottom:-5,
+  marginTop:-10
 });
 
 export let labelStyle = EStyleSheet.create({
@@ -19,7 +21,8 @@ export let labelStyle = EStyleSheet.create({
   alignSelf:'flex-start',
   width:null,
   fontSize:14,
-  fontWeight: "300",
+  fontStyle:'italic',
+  fontWeight:'700'
 });
 
 export const inputStylesContainer = EStyleSheet.create({
@@ -40,11 +43,11 @@ export const inputErrors = {
 };
 
 export const inputContainerStyle = {
-  borderWidth:0,
   borderBottomWidth: 0,
   borderColor: Colors.inputBorderColor,
-  backgroundColor:'#DEEBF7',
   height:53,
+  marginBottom:-5,
+  marginTop:-10
 };
 
 export const cardStyle = {

@@ -43,7 +43,7 @@ class Icons extends Component {
 
         case 'Ionicons':
             return (
-              <Ionicons name={name} size={size || iconSize} color={color || "#000"} />
+              <Ionicons style={style} name={name} size={size || iconSize} color={color || "#000"} />
             );
           
             case 'Fontisto':

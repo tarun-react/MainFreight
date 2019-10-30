@@ -18,6 +18,7 @@ import {storeUserInfo} from 'DataManagers/UserDataManager'
 import { UserInfoConsumer } from "../../AppLevelComponents/Contexts/CxtUserInfo";
 import AsyncStorageHandler from "../../StorageHelpers/AsyncStorageHandler";
 import Constants from "../../Helpers/Constants";
+import BottomImage from "../../MainFreightUI/BottomImage";
 
 let valObj = {
   email: "samyak@yopmail.com",
@@ -96,6 +97,8 @@ class Login extends Component {
             </View>
             <Email value={valObj.email}  marginBottom={7} inputValueGetter={text => (valObj.email = text)} />
             <Password value={valObj.password} inputValueGetter={text => (valObj.password = text)} />
+                          
+                        <BottomImage>
 
             <CustomText
               text="Forgot password?"
@@ -110,6 +113,7 @@ class Login extends Component {
               containerStyle={{ marginVertical: 20 }}
               isApiCall={this.state.isApiCall}
             />
+                        </BottomImage>
           </View>
         </View>
       </Container>

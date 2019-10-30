@@ -40,7 +40,7 @@ export default class Container extends Component {
   }
 
   renderForAndroid() {
-    let { hideGradient } = this.props;
+    let { hideGradient,style } = this.props;
     let gradientPropsMain = {
       start: { x: 0.0, y: 0.25 },
       end: { x: 0.0, y: 1.0 },
@@ -48,13 +48,13 @@ export default class Container extends Component {
       colors: !hideGradient ? headerColorsMain  : ['#fff','#fff'] 
     };
     return (
-      <View style={{flex:1}}>
+      <View style={{flex:1,...style}}>
         <LinearGradient {...gradientPropsMain} style={styles.header}>
           <StatusBar
             backgroundColor={Colors.white}
             barStyle="dark-content"
           />
-          <ScrollView keyboardShouldPersistTaps="always">
+          <ScrollView  keyboardShouldPersistTaps="always">
           {this.props.children}
           </ScrollView>
           {/* <ScrollView

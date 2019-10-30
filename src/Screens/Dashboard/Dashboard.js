@@ -19,6 +19,7 @@ import SubHeader from "AppLevelComponents/UI/SubHeader";
 import CustomCheckbox from "AppLevelComponents/UI/CustomCheckbox";
 import ScreenTitle from "MainFreightUI/ScreenTitle";
 import HomeRoundButton from "./components/HomeRoundButton";
+import BottomImage from "../../MainFreightUI/BottomImage";
 
 let valObj = {
   email: "samyak@yopmail.com",
@@ -49,7 +50,7 @@ class Dashboard extends Component {
           currentContext = context;
           return (
             <Container onBackPress={this.onBackPress} >
-              <View style={{ padding: 15 }}>
+              <View style={{ padding: 15, }}>
                 <SubHeader
                 rightPress={()=>this.props.navigation.navigate('profile')}
                   type={Constants.header_back_middle_right}
@@ -77,9 +78,12 @@ class Dashboard extends Component {
                       <HomeRoundButton onPress={this.navigate.bind(this,'')} text='order history' />
                       <HomeRoundButton onPress={this.navigate.bind(this,'')} text='other enquiries' />
                   </View>
-
+                    
+                   
                 </View>
+                
               </View>
+                      
             </Container>
           );
         }}

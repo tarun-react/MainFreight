@@ -37,8 +37,11 @@ class Profile extends Component {
                 <View style={{ padding: 15 }}>
                   <SubHeader
                     type={Constants.header_back_middle_right}
-                    rightText="Hi, cathy"
+                    title='My Profile'
+                    rightText="Hi, cathy !"
                     noUnderline={true}
+                    rightColor='#000'
+                    rightItalic
                   />
                   <View style={{ alignItems: "center", marginTop: 20 }}>
                     <View style={styles.circle} />
@@ -47,7 +50,7 @@ class Profile extends Component {
 
                 <ScreenTitle title="My Vouchers" italic={true} />
 
-                <InfoContainer title="MF2012929 120.. $34" italic={true} />
+                <InfoContainer title="MF2019FAVE123456789 ... $35.00 Exp 21-Sep-19" italic={true} />
                 <CustomButton
                     containerStyle={{ marginTop: 10 }}
                     btnType="white"

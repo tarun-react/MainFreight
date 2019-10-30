@@ -10,10 +10,10 @@ class ScreenTitle extends Component {
   }
 
   render() {
-      const {title,italic} = this.props
+      const {title,italic,textCenter,bgWhite} = this.props
     return (
-      <View style={styles.container} >
-        <CustomText text={title} color='#fff' size={17} fontStyle={italic ? 'italic' : undefined} />
+      <View style={[styles.container,{alignItems:textCenter ? 'center' : undefined,backgroundColor:bgWhite?'#DEEBF7' : Colors.screenTitle, }]} >
+        <CustomText text={title} color={bgWhite?'#000' : '#fff'} size={17} fontStyle={italic ? 'italic' : undefined} style={{fontWeight:'700'}} />
       </View>
     );
   }
@@ -21,10 +21,9 @@ class ScreenTitle extends Component {
 
 const styles = {
     container:{
-        backgroundColor:Colors.screenTitle,
+        
         padding:15,
         width:'100%',
-        alignItems: 'center',
         marginTop:17,
     }
 }

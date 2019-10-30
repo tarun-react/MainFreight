@@ -41,13 +41,13 @@ HelperMethods.animateLayout()
   }
 
   render() {
-    let {width,value,textLabel,marginBottom,labelStyleAdditional} = this.props
+    let {width,value,textLabel,marginBottom,labelStyleAdditional,bgColor} = this.props
     let label = {...labelStyle,...labelStyleAdditional}
     return (
       <Input
         label={textLabel || "Email Address"}
         labelStyle={labelStyle}
-        inputContainerStyle={{...inputContainerStyle,marginBottom: marginBottom,}}
+        inputContainerStyle={{...inputContainerStyle,backgroundColor:bgColor,}}
         onChangeText={text => this.setText(text)}
         value={this.state.wantToEdit ? this.state.text : value}
         placeholderTextColor={Colors.inputs_placeholders}

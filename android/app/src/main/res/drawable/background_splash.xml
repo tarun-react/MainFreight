@@ -4,10 +4,10 @@
     <item
         android:drawable="@color/splash_bg"/>
 
-    <item
+    <!-- <item
         android:width="100dp"
         android:height="140dp"
         android:drawable="@drawable/appicon_png"
-        android:gravity="center" />
+        android:gravity="center" /> -->
 
 </layer-list>

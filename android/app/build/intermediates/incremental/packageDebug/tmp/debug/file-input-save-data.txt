@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Oct 30 14:54:22 IST 2019
+#Wed Oct 30 17:39:42 IST 2019
 70.path=lib/x86/libjsinspector.so
 78.base=/Users/hermes/Projects/MainFreight/android/app/build/intermediates/merged_assets/debug/out
 64.base=/Users/hermes/Projects/MainFreight/android/app/build/intermediates/transforms/stripDebugSymbol/debug/0

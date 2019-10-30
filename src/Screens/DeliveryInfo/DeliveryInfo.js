@@ -75,18 +75,18 @@ class DeliveryInfo extends Component {
                   noUnderline={true}
                 />
                 <ScreenTitle title="Delivery Information" />
-                <ScreenTitle title="Delivery" />
+                <ScreenTitle bgWhite title="Delivery" />
                 
-                    <InputDatePicker inputValueGetter={val => {}} />
-                    <InputIDNumber inputValueGetter={val => {}} textLabel='From Postal Code' />
-                    <InputIDNumber inputValueGetter={val => {}} textLabel='To Postal Code' />
+                    <InputDatePicker bgColor={Colors.buttonSelectorDark} inputValueGetter={val => {}} />
+                    <InputIDNumber bgColor={Colors.buttonSelectorLight} inputValueGetter={val => {}} textLabel='From Postal Code' />
+                    <InputIDNumber bgColor={Colors.buttonSelectorDark} inputValueGetter={val => {}} textLabel='To Postal Code' />
                     
-                <ScreenTitle  title="Package" />
+                <ScreenTitle bgWhite  title="Package" />
                     <ButtonSelector onPress={this.navigate.bind(this,'packagingType')} bgColor={'#EAEFF7'} text="Select packaging type" />
 
-                    <ScreenTitle  title="Quantity" />
+                    <ScreenTitle bgWhite title="Quantity" />
                     <ButtonSelector bgColor={Colors.buttonSelectorDark} text="Select" />
-                    <SubmitBackBtn onSubmit={this.navigate.bind(this,'reviewOrder')} />
+                    <SubmitBackBtn onSubmit={this.navigate.bind(this,'houseRemoval')} />
 
               </View>
             </Container>

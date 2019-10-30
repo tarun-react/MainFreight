@@ -8,21 +8,9 @@ export class NumberStepper extends Component {
   state = {
     initialValue: undefined,
   };
-  setValue = value => {
-    this.props.valGetter(value);
-  };
-
-  componentDidMount() {
-    this.setState({initialValue: currentContext.userData.hours});
-  }
 
   render() {
     return (
-      <UserInfoConsumer>
-        {context => {
-          currentContext = context;
-          return (
-            <>
                 <UIStepper
                   initialValue={1}
                   displayValue={true}
@@ -35,10 +23,6 @@ export class NumberStepper extends Component {
                     this.setValue(value);
                   }}
                 />
-            </>
-          );
-        }}
-      </UserInfoConsumer>
     );
   }
 }

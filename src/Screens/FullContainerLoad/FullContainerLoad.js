@@ -21,6 +21,7 @@ import ScreenTitle from "MainFreightUI/ScreenTitle";
 import ListRenderer from "MainFreightUI/ListRenderer";
 import InputIDNumber from "../../AppLevelComponents/UI/FormInputs/InputIDNumber";
 import ButtonSelector from "../../MainFreightUI/ButtonSelector";
+import SubmitBackBtn from "../../MainFreightUI/SubmitBackBtn";
 
 let requirements = [
   {item:'5 days notice is required.'},
@@ -54,6 +55,15 @@ class FullContainerLoad extends Component {
     })
     return view
   }
+
+  submit = () =>{
+    this.props.navigation.navigate('containerTypes')
+  }
+
+  navigate = () => {
+    this.props.navigation.navigate('containerTypes')
+
+  }
   render() {
     return (
       <UserInfoConsumer>
@@ -63,23 +73,22 @@ class FullContainerLoad extends Component {
             <Container hideGradient >
               <View style={{ padding: 15,paddingBottom:0 }}>
                 <SubHeader
-                  type={Constants.header_back_middle_right}
                   rightText="Hi, cathy"
                   noUnderline={true}
                 />
-                <ScreenTitle title="Full Container Load" />
-                <ScreenTitle title="Delivery" />
+                <ScreenTitle textCenter title="Full Container Load" />
+                <ScreenTitle bgWhite title="Delivery" />
                 
-                    <InputDatePicker />
-                    <InputIDNumber textLabel='From Postal Code' />
-                    <InputIDNumber textLabel='To Postal Code' />
+                <InputDatePicker bgColor={Colors.buttonSelectorDark} inputValueGetter={val => {}} />
+                    <InputIDNumber bgColor={Colors.buttonSelectorLight} inputValueGetter={val => {}} textLabel='From Postal Code' />
+                    <InputIDNumber bgColor={Colors.buttonSelectorDark} inputValueGetter={val => {}} textLabel='To Postal Code' />
                     
-                    <ScreenTitle title="Container Type" />
+                    <ScreenTitle bgWhite title="Container Type" />
 
-                    <ButtonSelector bgColor={Colors.buttonSelectorLight} text="Select Container type" />
+                    <ButtonSelector onPress={this.navigate} bgColor={Colors.buttonSelectorLight} text="Select Container type" />
 
-                    <FirstName textLabel="OTHERS" />
-                    <FirstName textLabel="DETAILS" />
+                    <FirstName inputValueGetter={val => {}} bgColor={Colors.buttonSelectorLight} textLabel="OTHERS" />
+                    <FirstName inputValueGetter={val => {}} bgColor={Colors.buttonSelectorDark} textLabel="DETAILS" />
                     
 
                     <View style={{ backgroundColor: Colors.bottomBlueFooter,}}>
@@ -94,24 +103,7 @@ class FullContainerLoad extends Component {
 
                 {this.renderList()}
 
-                <View style={{width:'60%',alignSelf:'center'}} >
-
-                <CustomButton
-                  containerStyle={{ marginTop: 10,height:40, width:'80%',alignSelf:'center'}}
-                  buttonStyle={{height:40}}
-                  onPress={this.login}
-                  text="submit"
-                />
-
-                <CustomButton
-                  containerStyle={{ marginTop: 10,marginBottom:20,height:40, width:'80%',alignSelf:'center'}}
-                  buttonStyle={{height:40}}
-                  btnType="white"
-                  onPress={this.login}
-                  text="back"
-                />
-                </View>
-
+                <SubmitBackBtn onSubmit={this.submit} />
                 </View>
 
                 

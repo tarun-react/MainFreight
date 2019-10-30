@@ -42,7 +42,7 @@ class Revieworder extends Component {
                     noUnderline={true}
                   />
 
-                <ScreenTitle title="REVIEW MY ORDER"  />
+                <ScreenTitle textCenter title="REVIEW MY ORDER"  />
 
                 <InfoContainer title="Order Details:" italic={true} >
                   <CustomText text={'Delivery of 1 Package Type 1 Box'} style={styles.infoText} color='#000' size={15}  />
@@ -55,7 +55,7 @@ class Revieworder extends Component {
                 </InfoContainer>
 
                 <ButtonSelector
-                  text={"Promo Code"}
+                  text={"Promo Code ( To Be done) "}
                   hideIcon
                 />
 

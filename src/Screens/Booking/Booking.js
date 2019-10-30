@@ -48,7 +48,7 @@ class Booking extends Component {
                   rightText="Hi, cathy"
                   noUnderline={true}
                 />
-                <ScreenTitle title="Booking" />
+                <ScreenTitle bgWhite textCenter title="Booking" />
                 <ScreenTitle title="Select transport service type" />
                 <ListRenderer data={data} />
 

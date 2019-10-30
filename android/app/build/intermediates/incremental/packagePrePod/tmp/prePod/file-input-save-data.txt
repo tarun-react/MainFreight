@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Oct 30 14:20:47 IST 2019
+#Wed Oct 30 18:23:22 IST 2019
 70.path=lib/arm64-v8a/libyoga.so
 78.base=/Users/hermes/Projects/MainFreight/android/app/build/intermediates/transforms/stripDebugSymbol/prePod/0
 64.base=/Users/hermes/Projects/MainFreight/android/app/build/intermediates/merged_assets/prePod/out

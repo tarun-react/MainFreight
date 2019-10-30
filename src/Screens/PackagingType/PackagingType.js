@@ -49,33 +49,38 @@ class PackagingType extends Component {
         {context => {
           currentContext = context;
           return (
-            <Container>
-              <View style={{ padding: 15 }}>
+            <>
+            <Container style={{marginBottom:120}} >
+              <View style={{ padding: 15,}}>
                 <SubHeader
                   rightText="Hi, cathy"
                   noUnderline={true}
                 />
                 <ScreenTitle title="Packaging Type" />
-                <ButtonSelector text='Document' hideIcon />
+                <ButtonSelector  italic text='Document' hideIcon />
                 <ListRenderer renderItem={this.renderItems} data={data} />
 
                     <View style={{marginTop:20}} >
 
-                <ButtonSelector text='Small Goods (LWH)' hideIcon />
+                <ButtonSelector italic text='Small Goods (LWH)' hideIcon />
                 <ListRenderer renderItem={this.renderItems} data={data} />
                     </View>
 
 
                     <View style={{marginTop:20}} >
 
-<ButtonSelector text='Large Goods (LWH)' hideIcon />
+<ButtonSelector italic text='Large Goods (LWH)' hideIcon />
 <ListRenderer renderItem={this.renderItems} data={data} />
     </View>
 
-
-             <SubmitBackBtn onSubmit={()=>this.props.navigation.goBack()} />
+             
               </View>
             </Container>
+            <View style={{position:'absolute',bottom:0,zIndex:10000,width:'100%',backgroundColor:Colors.headerMain[1],alignSelf:'center'}} >
+                
+                <SubmitBackBtn onSubmit={()=>this.props.navigation.goBack()} />
+                 </View>
+                 </>
           );
         }}
       </UserInfoConsumer>

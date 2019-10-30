@@ -56,12 +56,12 @@ wantToEdit:undefined,
   };
 
   render() {
-    let { label,children,placeHolder,value } = this.props;
+    let { label,children,bgColor,value } = this.props;
     let placeHolderTxt = value || label
     let placeHolderColor = value ? Colors.light : Colors.inputs_placeholders 
     return (
         <TouchableWithoutFeedback onPress={()=>this.openDatePicker()}>
-      <View style={[styles.container,inputContainerStyle]}>
+      <View style={[styles.container,inputContainerStyle,{backgroundColor:bgColor}]}>
         <View style={{marginTop: 15,flexDirection: 'row',alignItems:'center',justifyContent:'space-between'}}>
           <CustomText style={{fontSize:15,paddingLeft:20}} color={this.state.date ? Colors.light : '#000'  }  text={this.state.date || 'Delivery Date'} />
           <AntDesign

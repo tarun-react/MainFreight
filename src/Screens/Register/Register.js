@@ -88,9 +88,9 @@ class Register extends Component {
                   <View>
                     <FirstName bgColor={Colors.buttonSelectorLight} inputValueGetter={val => {}} textLabel="Name" />
                     <FirstName bgColor={Colors.buttonSelectorDark} inputValueGetter={val => {}} textLabel="Company Name" />
-                    <MobileNumber inputValueGetter={val => {}} textLabel="Mobile number" />
-                    <Email inputValueGetter={val => {}} />
-                    <PlainText inputValueGetter={val => {}} textLabel="Billing Address" />
+                    <MobileNumber bgColor={Colors.buttonSelectorLight} inputValueGetter={val => {}} textLabel="Mobile number" />
+                    <Email bgColor={Colors.buttonSelectorDark} inputValueGetter={val => {}} />
+                    <PlainText bgColor={Colors.buttonSelectorLight} inputValueGetter={val => {}} textLabel="Billing Address" />
                   </View>
                 </View>
               </Container>

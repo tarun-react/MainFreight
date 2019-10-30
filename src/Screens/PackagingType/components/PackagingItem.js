@@ -25,6 +25,8 @@ class PackagingItem extends Component {
         <CustomText text={item.weight} color='#000'  />
         <CustomText text={item.dimension} color='#000'  />
         </View>
+
+        <View />
       </View>
     );
   }

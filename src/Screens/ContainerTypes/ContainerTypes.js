@@ -19,6 +19,7 @@ import ListRenderer from "MainFreightUI/ListRenderer";
 import ButtonSelector from "MainFreightUI/ButtonSelector";
 import ContainerTypesItem from "./components/ContainerTypesItem";
 import NumberStepper from "../../AppLevelComponents/UI/NumberStepper";
+import SubmitBackBtn from "../../MainFreightUI/SubmitBackBtn";
 
 let data = [
   {item:'20 Footer GP' },
@@ -38,6 +39,10 @@ class ContainerTypes extends Component {
     return <ContainerTypesItem index={index} item={item} />;
   };
 
+  submit = () =>{
+    this.props.navigation.navigate('reviewOrder')
+  }
+
   render() {
     return (
       <UserInfoConsumer>
@@ -50,21 +55,10 @@ class ContainerTypes extends Component {
                   rightText="Hi, cathy"
                   noUnderline={true}
                 />
-                <ScreenTitle title="Container Types" />
+                <ScreenTitle textCenter title="Container Types" />
                 <ListRenderer renderItem={this.renderItems} data={data} />
 
-                <CustomButton
-                  containerStyle={{ marginTop: 10 }}
-                  onPress={this.login}
-                  text="submit"
-                />
-
-                <CustomButton
-                  containerStyle={{ marginTop: 10 }}
-                  btnType="white"
-                  onPress={this.login}
-                  text="back"
-                />
+               <SubmitBackBtn onSubmit={this.submit} />
               </View>
             </Container>
           );
