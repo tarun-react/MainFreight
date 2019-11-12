@@ -4,7 +4,7 @@
       "root": ["./src"],
       "alias": {
         "helpers": "./src/Hesslpers",
-        "assets":"./src/assets"
+        "assets":"./assets"
       }
     }],
 
